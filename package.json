@@ -1,0 +1,17 @@
+{
+  "name": "gang-pack",
+  "version": "1.0.0",
+  "private": true,
+  "description": "2-in-1 Party Pack - Confession Bomb + Imposter for local WiFi gang",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "install:all": "npm install --prefix server && npm install --prefix client"
+  },
+  "keywords": ["party", "game", "socket.io", "local"],
+  "author": "",
+  "license": "ISC"
+}
